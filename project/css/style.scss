@@ -1,0 +1,230 @@
+
+@font-face {
+    font-family: 'Kyiv Type Titling';
+    src: local('Kyiv Type Titling'),
+    url('/project/fonts/KyivTypeTitling-VarGX.ttf') format('truetype');
+    }
+html
+body {
+    width: 1440px;
+    height: 100%;
+   background-image: url(/project/images/Ellipse\ 1.svg);
+    background-repeat: repeat-y;
+    background-size: 1000px;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+        width: 1440px;
+        height:max-content;
+        background-color:rgba(181, 204, 40, 0.5);
+        font-family: 'Kyiv Type Titling';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #8625E8;
+ }
+
+.navbar {
+    width: 1440px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Kyiv Type Titling';
+    font-size: 24px;
+    background-color: rgba(181, 204, 40, 1);
+}
+
+.main_page {
+    margin-left: 162px;
+    width: 170px;
+    
+}
+
+.books {
+    margin-left: 470px;
+    width: 265px;
+    
+}
+
+.video {
+    margin-left: 70px;
+    margin-right: 41px;
+    width: 265px;
+}
+
+.head {
+    position: relative;
+    width: 1440px;
+    height: 477px;
+    background-image: url(/project/images/background.png);
+    background-size: cover;
+    background-position: 30%;
+}
+
+.name {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 390px;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    font-size: 50px;
+    line-height: 90px;
+    text-align:left;
+}
+
+.head::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(181, 204, 40);
+    opacity: 0.5;
+}
+
+.main{
+    display: flex;
+   height:600px;
+   flex-wrap: wrap;
+   background-color: rgba(181, 204, 40, 0.5);
+
+    
+}
+.foto {
+
+
+    &_big {
+        background-image: url(/project/images/foto_big.png);
+        background-size: cover;
+        width: 588px;
+        height: 265px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 25px;
+        margin-top: 140px;
+        margin-left: 52px;
+
+
+    }
+}
+
+
+.review__items {
+    width: 265px;
+    height: 80px;
+    margin-top: 350px;
+    margin-left: 300px;
+    position: absolute;
+}
+
+.review__items img {
+    background-size: cover;
+        width: 310px;
+        height: 250px;
+        margin-top: -250px;
+        margin-left: -60px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 25px;
+        position: absolute;
+        
+
+}
+
+.review__items p {
+   width: 265px;
+   height: 80px;
+   margin-top: 30px;
+   margin-left: -23px;
+   position: absolute;
+   }
+
+
+#next {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 214, 0, 1);
+    position: absolute;
+    margin-left: 435px;
+    margin-top: 460px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 24"><path fill="%238625E8" d="M22.0607 13.0607C22.6464 12.4749 22.6464 11.5251 22.0607 10.9393L12.5147 1.3934C11.9289 0.807611 10.9792 0.807611 10.3934 1.3934C9.80761 1.97919 9.80761 2.92893 10.3934 3.51472L18.8787 12L10.3934 20.4853C9.80761 21.0711 9.80761 22.0208 10.3934 22.6066C10.9792 23.1924 11.9289 23.1924 12.5147 22.6066L22.0607 13.0607ZM0 13.5H21V10.5H0V13.5Z"/></svg>');
+    background-repeat: no-repeat;
+    background-size: 0.7cm;
+    background-position: center;
+    position: absolute;
+}
+
+#prev {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 214, 0, 1);
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 460px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 24"><path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM23 10.5L2 10.5V13.5L23 13.5V10.5Z" fill="%238625E8"/></svg>');
+    background-repeat: no-repeat;
+    background-size: 0.7cm;
+    background-position: center;
+    position: absolute;
+    }
+
+    .footer {
+    height: 300px;
+    width: 1440px;
+    position: absolute;
+    background-color: rgba(181, 204, 40, 1);
+
+}
+
+.person {
+    display: flex;
+
+    &_foto {
+        width: 265px;
+        height: 265px;
+        background-image: url(/project/images/foto1.png);
+        background-size: cover;
+        margin-left: 14px;
+        margin-top: 15px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 25px;
+        position: absolute;
+    }
+
+    &_description {
+        width: 130px;
+        height: 280px;
+        margin-left: 290px;
+        position: absolute;
+        margin-top: 28px;
+
+    }
+}
+
+.addres {
+     width: 260px;
+     height: 180px;
+     margin-left: 1140px;
+     position: absolute;
+     margin-top: 22px;
+}
+
+.contacts {
+     width: 260px;
+     height: 180px;
+     margin-left: 1140px;
+     position: absolute;
+     margin-top: 130px;
+}
